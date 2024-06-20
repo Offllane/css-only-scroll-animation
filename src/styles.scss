@@ -7,21 +7,6 @@
   box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    animation-name: anim1;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-    animation-timeline: scroll();
-  }
-}
-
 @mixin animation-default-params($animation-name) {
   animation-name: $animation-name;
   animation-fill-mode: forwards;
@@ -32,7 +17,7 @@
 body {
   position: relative;
   width: 100vw;
-  height: 10000px;
+  height: 20000px;
   background-color: var(--background-color);
   font-family: "Roboto", sans-serif;
   color: var(--accent-color)
